@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>pig game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player-0">
+        <h1 class="name">Player 1</h1>
+        <p class="score" id="score-0">24</p>
+        <div class="current">
+          <p class="current-label">current</p>
+          <p class="score-label" id="current-0">0</p>
+        </div>
+      </section>
+      <section class="player player-1">
+        <h1 class="name">Player 2</h1>
+        <p class="score" id="score-1">48</p>
+        <div class="current">
+          <p class="current-label">current</p>
+          <p class="score-label" id="current-1">0</p>
+        </div>
+      </section>
+      <img src="dice-5.png" class="dice" />
+      <button class="btn btn-newgame">🆕 new game</button>
+      <button class="btn btn-rolldice">🎲 roll dice</button>
+      <button class="btn btn-hold">✋ hold</button>
+      <button class="btn btn-rule">🧾 rules</button>
+      <div class="modal hiden1">
+        <h2 class="rules">Rules!</h2>
+        <pre class="content">
+         1.If a 🎲Roll-dice is 1,It switches to another player.
+
+         2.If you press ✋ hold,Your current score will be added to your total score.
+          
+         3.Player 🏆 Wins,when ever total-score reaches 💯.
+        </pre>
+      </div>
+      <div class="overlay hiden1"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
